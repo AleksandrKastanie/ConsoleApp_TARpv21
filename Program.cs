@@ -128,7 +128,10 @@ namespace ConsoleApp_TARpv21
             Console.WriteLine("Napishite shirinu i dlinu komnati");
             double a;
             a = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"{a*a}");
+            Console.WriteLine("Napishite shirinu i dlinu komnati");
+            double b;
+            b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"{a*b}  Площадь комнаты");
             Console.ReadKey();
         }
     }
