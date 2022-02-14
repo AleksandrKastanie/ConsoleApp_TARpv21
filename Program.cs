@@ -125,14 +125,87 @@ namespace ConsoleApp_TARpv21
             {
                 Console.WriteLine("ei ole pinginaabrid");
             }*/
-            Console.WriteLine("Napishite shirinu i dlinu komnati");
+            /*
+            Console.WriteLine("Napishite shirinu komnati");
             double a;
             a = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Napishite shirinu i dlinu komnati");
+            Console.WriteLine("Napishite dlinu komnati");
             double b;
             b = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"{a*b}  Площадь комнаты");
+            Console.WriteLine($"{a * b}  Площадь комнаты");
+            Console.WriteLine("Kas remondi tegemise soov?");
+            string answer = Console.ReadLine();
+            if (answer.ToLower() == "jah" || answer.ToLower() == "yes")
+            {
+                Console.WriteLine("kui palju maksab 1 ruutmeeter?");
+                double hind;
+                hind = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"{a * b * hind}  hind koik rummi");
+            }*/
+            /*
+            Console.WriteLine("sisesta kogu toa hind 30% soodustusega? ");
+            double hind;
+            hind = Convert.ToDouble(Console.ReadLine());
+            double sodus = 0.3 * hind ;
+            Console.WriteLine($"{sodus + hind}  hind ilma allahindluseta");
+            */
             Console.ReadKey();
+            Console.WriteLine("kirjuta oma pikkus");
+            double pikkus;
+            pikkus = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("kirjuta oma sugu(1 - Mees/ 2 - Naine )");
+            string sugu = Console.ReadLine();
+            if (pikkus == 174)
+            {
+                if (sugu.ToLower() == "mees" || sugu == "1")
+                {
+                    Console.WriteLine($"{pikkus} Ta Oled normaalset kasvu");
+                }
+                else if (sugu.ToLower() == "naine" || sugu == "2")
+                {
+                    Console.WriteLine($"{pikkus} Sinu pikkus on üle keskmise");
+                }
+
+            }
+            else if (pikkus > 174)
+            {
+                Console.WriteLine($"{pikkus} Sinu pikkus on üle keskmise");
+            }
+            else if (pikkus == 165)
+            {
+                if (sugu.ToLower() == "mees" || sugu == "1")
+                {
+                    Console.WriteLine($"{pikkus} Teie pikkus on alla keskmise");
+                }
+                else if (sugu.ToLower() == "naine" || sugu == "2")
+                {
+                    Console.WriteLine($"{pikkus} Ta Oled normaalset kasvu");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"{ pikkus} Teie pikkus on alla keskmise");
+            }
+            Console.ReadKey();
+
+            Console.ReadKey();
+            Console.WriteLine("sisestage oma toa temperatuur");
+            double temp;
+            temp = Convert.ToDouble(Console.ReadLine());
+            if (temp == 18)
+            {
+                Console.WriteLine("teil on normaalne toatemperatuur");
+            }
+            else if (temp > 18)   
+            {
+                Console.WriteLine("Teie toatemperatuur on keskmisest kõrgem");
+            }
+            else
+            {
+                Console.WriteLine("Teie toa temperatuur on keskmisest madalam");
+            }
+                Console.ReadKey();
+
         }
     }
 }

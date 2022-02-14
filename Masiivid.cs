@@ -56,6 +56,7 @@ namespace ConsoleApp_TARpv21
                 Console.WriteLine(j*j);
             }
             */
+            /*
             int[] arvud = new int[5];
             int i;
             for (i = 0; i < arvud.Length; i++)
@@ -74,11 +75,48 @@ namespace ConsoleApp_TARpv21
                 summa += arvud[i];
                 korrutis *= arvud[i];
             }
-            */
+            
             Console.WriteLine($"summa={summa}" );
             Console.WriteLine();
             Console.WriteLine();
             Console.ReadLine();
+            */
+            /*Console.WriteLine("Osta elevant ära!");
+            string loom = Console.ReadLine();
+            while (loom == "elevant")
+			{
+                Console.WriteLine("Kõik ütlevad, et osta " + loom+ "aga osta!");
+                Console.ReadLine();
+			}
+            Console.WriteLine("Elevant on teie praegu");
+            Console.ReadKey();
+            Random rand = new Random();
+			int i = rand.Next(10);
+			int count = 0;
+			Console.WriteLine("Arva ära arvuti antud number 0 kuni 9");
+			Console.WriteLine("Sissestage esimine arv");
+			int k = Convert.ToInt32(Console.ReadLine());
+			while (count <= 5)
+			{
+				if (i == k)
+				{
+					Console.WriteLine("Arvasite ära, arvuti valis" + k + "Palju õnne!");
+					break;
+				}
+				else
+				{
+					count++;
+					Console.WriteLine("Нет, это не число " + k + "! Попытка № " + count + ":");
+					k = Convert.ToInt32(Console.ReadLine());
+                    if (count == 6)
+                    {
+                        Console.WriteLine("Katsete arv sai otsa, arv oli" + i);
+                        break;
+                    }
+                }
+			}
+			Console.ReadLine();
+            */
         }
     }
 }
