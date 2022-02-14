@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ConsoleApp_TARpv21</RootNamespace>
     <AssemblyName>ConsoleApp_TARpv21</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_TARpv21.Masiivid</StartupObject>
+    <StartupObject>ConsoleApp_TARpv21.ForFunktsionid</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -62,6 +62,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForFunktsionid.cs" />
+    <Compile Include="Funktsioonid.cs" />
     <Compile Include="Masiivid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

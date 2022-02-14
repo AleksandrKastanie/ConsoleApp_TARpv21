@@ -10,16 +10,15 @@ namespace ConsoleApp_TARpv21
     {
         static void Main(string[] args)
         {
-            /* Random rnd = new Random();//Создано отдельно новое неопределенное рандомное число
-            int[] arvud = new int[10];
-            for (int i = 0; i < arvud.Length; i++)
-            {
-                arvud[i] = rnd.Next(1, 100);
-            }
-            foreach (int arv in arvud)
-            {
-                Console.Write($" {arv,4} ");// "4" кол-во пустых символов между рандомными значениями 
-            }
+            /* int q = 10;
+             int korrutis1 = Funktsioonid.korrutamine(q, 5);
+             Console.WriteLine(korrutis1);
+             Console.ReadKey();
+            */
+            
+            Array arvud;
+            arvud = Funktsioonid.Arvud_Massiviisse(10, false);
+            Funktsioonid.Arvud_Ekraanile(arvud);
             Console.WriteLine();
             string[] nimed = new string[5] { "Anna", "Olga", "Mark", "Timur", "Jegor" };
             int a=0;
@@ -36,7 +35,8 @@ namespace ConsoleApp_TARpv21
                 }
             } while (a<1 || a>5);
             Console.WriteLine(nimed[a-1]);
-            */
+            Console.ReadKey();
+            
             /*
             Random rnd = new Random();
             int N = rnd.Next(1, 100);
@@ -115,8 +115,32 @@ namespace ConsoleApp_TARpv21
                     }
                 }
 			}
-			Console.ReadLine();
             */
-        }
+			/*
+            Console.ReadLine();
+            Array massiiv4;
+            massiiv4 = Funktsioonid.Arvud_Massiviisse(4, true);
+            Array.Sort(massiiv4);// ot menshego k bolshemu 
+            int D = 0;
+            int t = 0;
+            foreach (int item in massiiv4)
+            {
+                D=(int)(D+item* Math.Pow(10, t));
+                t++;
+            }
+            Console.WriteLine(D);
+             
+            int[,] tabel = new int[10, 10];
+            for (int row = 1; row < 11; row++)
+            {
+                for (int col = 0; col < 11; col++)
+                {
+                    tabel[row, col] = row * col;
+                    Console.Write($"{row * col,4}");
+                }
+                Console.WriteLine();
+            }
+            */
+        }   
     }
 }
