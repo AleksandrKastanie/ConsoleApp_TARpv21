@@ -43,21 +43,21 @@ namespace ConsoleApp_TARpv21
         }
         public static void Arvud_Ekraanile(Array massiiv)
         {
-            int k,max = 0;
-            
+            int k, max = 0;
+
             foreach (var m in massiiv)
             {
                 k = m.ToString().Length;
-                if (k>max)
+                if (k > max)
                 {
-                    max = k; 
+                    max = k;
                 }
             }
             max++;
             foreach (var m in massiiv) // massiiv ekraanile
             {
                 int n = max + 1;
-                Console.Write("{0,1}",m,max);
+                Console.Write("{0,1}", m, max);
             }
         }
         public static double AR_Mas(int n)
@@ -72,9 +72,42 @@ namespace ConsoleApp_TARpv21
             {
                 kesk = kesk + item;
             }
-            kesk = Math.Round(kesk / n,3);
+            kesk = Math.Round(kesk / n, 3);
             return kesk;
-        
+
+        }
+        public static double kassi_calculat(int a, int b, string c)
+        {
+            double sum = 0;
+            if (c == "+")
+            {
+                sum = a + b;
+            }
+            else if (c == "-")
+            {
+                sum = a - b;
+            }
+            else if (c == "*")
+            {
+                sum = a * b;
+            }
+            else if (c == "/")
+            {
+                sum = a / b;
+                Math.Round(sum);
+            }
+            for (int i = 0; i < sum; i++)
+            {
+                Console.Write("nurr ");
+            }
+            return sum;
+        }
+        public static void Star(int stars)
+        {
+            for (int i = 0; i < stars; i++)
+            {
+                Console.Write("*");
+            }
         }
     }
 
