@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp_TARpv21.ForFunktsionid</StartupObject>
+    <StartupObject>ConsoleApp_TARpv21.Ulesanded</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -64,9 +64,12 @@
   <ItemGroup>
     <Compile Include="ForFunktsionid.cs" />
     <Compile Include="Funktsioonid.cs" />
+    <Compile Include="Inimesed.cs" />
+    <Compile Include="loendid.cs" />
     <Compile Include="Masiivid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ulesanded.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

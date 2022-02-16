@@ -35,7 +35,7 @@ namespace ConsoleApp_TARpv21
             arvud = Funktsioonid.Arvud_Massiviisse(arv11,true);
             foreach (int arv12 in arvud)
             {
-                Console.Write($"{arv12} >>> ");
+                Console.Write($"{arv12} : ");
                 Funktsioonid.Star(arv12);
             }
             Console.ReadLine();
