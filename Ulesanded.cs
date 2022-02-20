@@ -25,26 +25,61 @@ namespace ConsoleApp_TARpv21
             {
 
             }*/
-            Console.Write("Napishite kol-vo elementov v spiske");
-            int n = int.Parse(Console.ReadLine());
-            List<int> arvud = new List<int>(n);
-            for (int i = 0; i < n; i++)
+            
+            /*Random rnd = new Random();
+            List<int> numbers = new List<int>();
+            Console.WriteLine("sisestage numbrite arv:");
+            int k = int.Parse(Console.ReadLine());
+            for (int i = 0; i < k; i++)
             {
-                Console.WriteLine("Napishite elementi");
-                arvud.Add(int.Parse(Console.ReadLine()));
+                int number = rnd.Next(1, 20);
+                numbers.Add(number);
             }
-            foreach (int num in arvud)
+            foreach (int number in numbers)
             {
-                Console.Write(num+", ");
+                Console.Write(number + " ");
             }
-            for (int p = 0; p < n; p++)
+            List<int> summa = new List<int>();
+            int snumber = numbers[0];
+            int enumber = numbers[numbers.Count - 1];
+            numbers.Insert(0, enumber);
+            numbers.Add(snumber);
+            Console.ReadLine();
+            int op = 1;
+            Console.WriteLine("Uus Arreylist: ");
+            for (int p = 0; p < k; p++)
             {
-                List <int> numbrid = (n-1) + arvud(n+1);
-            }
-            foreach (int item in arvud)
+                int sum = numbers[op+1]+ numbers[op-1];
+                summa.Add(sum);
+                op++;
+            }      
+            foreach (int sum in summa)
             {
-                Console.Write(item + ", ");
+                Console.Write(sum + " ");
             }
+            
+            Console.ReadKey();*/
+
+            Random rnd = new Random();
+            LinkedList<int> arvud = new LinkedList<int>();
+            for (int i = 0; i < 20; i++)
+            {
+                int arv = rnd.Next(1, 50);
+                int newarv = arv % 2;
+                if (newarv == 0)
+                {
+                    arvud.AddFirst(arv);
+                }
+                else
+                {
+                    arvud.AddLast(arv);
+                }
+            }
+            foreach (int arv in arvud )
+            {
+                Console.Write(arv+ " ");
+            }
+
             Console.ReadLine();
 
         }
